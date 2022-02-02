@@ -48,13 +48,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px auto 10px auto;
+    margin: 20px auto 20px auto;
 }
 
 .amount, .time {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.creation {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    vertical-align: middle;
 }
 
 
@@ -67,6 +74,13 @@
 
 .amount>img, .time>img {
     margin-right: 10px;
+}
+
+.avatar {
+    height: 100%;
+    border: solid 1px white;
+    border-radius: 100%;
+    float: left;
 }
 
 .overlay {
@@ -86,6 +100,7 @@
  }
 
  .overlay:hover {
+    cursor: pointer;
      opacity: 0.5;
  }
 
@@ -112,7 +127,13 @@ h1 {
     color: var(--white);
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--cyan);
 }
 
 p{
@@ -123,6 +144,11 @@ p{
 
 p>span {
     color: var(--white);
+}
+
+p>span:hover {
+    cursor: pointer;
+    color: var(--cyan);
 }
 
 .amount>p {
@@ -143,4 +169,9 @@ p>span {
 .footer>p {
     color: var(--white);
 }
+
+.creation>p {
+    margin-left: 10px;
+}
+
 
